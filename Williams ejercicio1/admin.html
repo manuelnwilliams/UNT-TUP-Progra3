@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <a href="index.html">Volver a la Tienda</a>
+        <hr>
+    </header>
+    <main>
+        <h2>Inventario de Productos</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="https://t3.ftcdn.net/jpg/04/44/86/70/360_F_444867086_79U7yvSiS6LaEWo8nN0ZYX8CJ7NhvhJh.jpg" alt="Pizza" width="80"></td>
+                    <td>Pizza Muzzarella</td>
+                    <td>Pizzas</td>
+                    <td>$18.000</td>
+                    <td>10</td>
+                    <td>
+                        <a href="#">Editar</a> / 
+                        <a href="#">Eliminar</a>
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td>2</td>
+                    <td><img src="https://www.shutterstock.com/image-photo/triple-burger-cheddar-onion-tomato-260nw-2087903464.jpg" alt="Hamburguesa" width="80"></td>
+                    <td>Hamburguesa Completa</td>
+                    <td>Hamburguesas</td>
+                    <td>$15.000</td>
+                    <td>8</td>
+                    <td>
+                        <a href="#">Editar</a> / 
+                        <a href="#">Eliminar</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td><img src="https://www.shutterstock.com/image-photo/delicious-argentinian-empanadas-filled-meat-260nw-2673296227.jpg" alt="Empanadas" width="80"></td>
+                    <td>Empanadas x12</td>
+                    <td>Empanadas</td>
+                    <td>$20.000</td>
+                    <td>15</td>
+                    <td>
+                        <a href="#">Editar</a> / 
+                        <a href="#">Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <details>
+            <summary><strong>Agregar Producto Rápido</strong></summary>
+
+            <form>
+                <br>
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="precio">Precio:</label><br>
+                <input type="number" id="precio" name="precio" required><br><br>
+
+                <label for="categoria">Categoría:</label><br>
+                <select id="categoria" name="categoria">
+                    <option value="pizzas">Pizzas</option>
+                    <option value="hamburguesas">Hamburguesas</option>
+                    <option value="empanadas">Empanadas</option>
+                </select><br><br>
+
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </details>
+
+    </main>
+</body>
+</html>
