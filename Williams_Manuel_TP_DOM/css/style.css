@@ -59,6 +59,7 @@ aside {
     display: flex;
     flex-direction: column;
     width: 220px;
+    height: fit-content;
     background: var(--color-blanco);
     padding: 1rem;
     border-radius: 10px;
