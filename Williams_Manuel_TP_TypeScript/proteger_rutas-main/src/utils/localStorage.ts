@@ -1,12 +1,26 @@
 import type { IUser } from "../types/IUser";
 
-export const saveUser = (user: IUser) => {
-  const parseUser = JSON.stringify(user);
-  localStorage.setItem("userData", parseUser);
+const USERS_KEY = "users";
+const SESSION_KEY = "userData";
+
+export const getUsers = (): IUser[] => {
+  const data = localStorage.getItem(USERS_KEY);
+  return data ? JSON.parse(data) : [];
 };
-export const getUSer = () => {
-  return localStorage.getItem("userData");
+
+export const saveUsers = (users: IUser[]) => {
+  localStorage.setItem(USERS_KEY, JSON.stringify(users));
 };
-export const removeUser = () => {
-  localStorage.removeItem("userData");
+
+export const saveSession = (user: IUser) => {
+  localStorage.setItem(SESSION_KEY, JSON.stringify(user));
+};
+
+export const getSession = (): IUser | null => {
+  const data = localStorage.getItem(SESSION_KEY);
+  return data ? JSON.parse(data) : null;
+};
+
+export const logout = () => {
+  localStorage.removeItem(SESSION_KEY);
 };
