@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Store – Panel Admin</title>
+  <link rel="stylesheet" href="../../../styles/global.css" />
+  <link rel="stylesheet" href="../../../styles/panel.css" />
+</head>
+<body>
+
+  <header class="panel-header">
+    <h1>⚙️ Panel de Administración</h1>
+    <button id="btn-logout" class="btn-logout">Cerrar Sesión</button>
+  </header>
+
+  <div class="panel-body">
+
+    <div class="tarjeta-bienvenida">
+      <h2>Bienvenido, <span id="nombre-usuario"></span> 👋</h2>
+      <p>Desde acá podés gestionar el inventario de productos de la tienda.</p>
+      <a href="../../store/home/home.html" class="btn-primario">Ver tienda</a>
+    </div>
+
+    <h3 style="margin-bottom: 1rem;">Inventario de Productos</h3>
+
+    <table class="tabla-admin">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Imagen</th>
+          <th>Nombre</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-body"></tbody>
+    </table>
+
+  </div>
+
+  <footer class="footer-global">
+    <p>&copy; 2026 FoodStore. Todos los derechos reservados.</p>
+  </footer>
+
+  <script type="module" src="./home.ts"></script>
+</body>
+</html>

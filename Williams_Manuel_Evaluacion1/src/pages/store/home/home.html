@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Store – Catálogo</title>
+  <link rel="stylesheet" href="../../../styles/global.css" />
+  <link rel="stylesheet" href="../../../styles/store.css" />
+</head>
+<body>
+
+  <!-- Encabezado de la tienda -->
+  <header class="header-tienda">
+    <h1><a href="#">🍔 Food Store</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Mis Pedidos</a></li>
+        <li>
+          <a class="link-carrito" href="../cart/cart.html">
+            🛒 Carrito
+            <span id="contador-carrito">0</span>
+          </a>
+        </li>
+        <li><a href="/src/pages/auth/login/login.html" id="link-cuenta">Mi cuenta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Layout principal: aside + contenido -->
+  <div class="layout-tienda">
+
+    <!-- Barra lateral de categorías -->
+    <aside class="aside-categorias">
+      <div class="caja-aside">
+        <h2>Categorías</h2>
+        <ul id="lista-categorias"></ul>
+      </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="contenido-principal">
+
+      <!-- Barra de búsqueda -->
+      <form class="barra-busqueda" id="form-busqueda">
+        <input
+          type="text"
+          id="input-busqueda"
+          placeholder="Buscar productos…"
+          autocomplete="off"
+        />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <h2 class="titulo-seccion">Productos Destacados</h2>
+
+      <!-- Grilla dinámica de productos -->
+      <section id="contenedor-productos" class="grilla-productos"></section>
+
+      <footer class="footer-global" style="margin-top: 2rem;">
+        <p>&copy; 2026 FoodStore. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@foodstore.com">info@foodstore.com</a></p>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Notificación tipo toast -->
+  <div id="toast"></div>
+
+  <script type="module" src="./home.ts"></script>
+</body>
+</html>
