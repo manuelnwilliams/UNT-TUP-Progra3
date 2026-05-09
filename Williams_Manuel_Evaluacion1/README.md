@@ -3,6 +3,15 @@
 Aplicación web de una tienda de comida online desarrollada como trabajo práctico del primer parcial de **Programación 3**. Permite explorar un catálogo de productos, agregar items al carrito, buscar y filtrar por categoría, y gestionar usuarios con registro, login y autenticación por roles.
 
 ---
+## Enlaces
+
+## Github:
+https://github.com/manuelnwilliams/UNT-TUP-Progra3/tree/91287767e11d52140ad9be1283f4c248cf0fbc13/Williams_Manuel_Evaluacion1
+
+## Video:
+https://1drv.ms/v/c/af9adb3146459f1b/IQAsJ3_L3whTQLZP7LM6kxxTAY3t6TX3iltREX6Z4qiExUw?e=ohHYZq
+
+---
 
 ## ✨ Funcionalidades
 
